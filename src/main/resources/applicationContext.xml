@@ -14,17 +14,6 @@ http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
   <!-- <context:component-scan base-package="com.agreeya.springpoc" /> -->
   <mvc:annotation-driven />
-  <bean class="com.agreeya.springpoc.service.ProductService">
-    <constructor-arg name="productMgr" ref="productManager"></constructor-arg>
-  </bean>
-  <bean class="com.agreeya.springpoc.service.HealthService"></bean>
-  <bean id="productManager" class="com.agreeya.springpoc.mgr.ProductManager"></bean>
-  <bean class="com.agreeya.springpoc.daos.ProductDao"></bean>
-  <bean class="com.agreeya.springpoc.daos.StoreProductsDao"></bean>
-  <!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> -->
-  <!-- <property name="prefix" value="/WEB-INF/jsp/" /> -->
-  <!-- <property name="suffix" value=".jsp" /> -->
-  <!-- </bean> -->
   <!-- Configure to plugin JSON as request and response in method handler -->
   <bean
     class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">

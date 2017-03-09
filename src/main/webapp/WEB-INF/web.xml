@@ -5,6 +5,10 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
     http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
+<!--    <welcome-file-list> -->
+<!--       <welcome-file>enterProduct.jsp</welcome-file> -->
+<!--    </welcome-file-list> -->
+
 <!--     <context-param> -->
 <!--         <param-name>contextClass</param-name> -->
 <!--         <param-value> -->
@@ -17,7 +21,7 @@
 <!--     </context-param> -->
 
 	<servlet>
-		<servlet-name>HelloWeb</servlet-name>
+		<servlet-name>PrizyPricerSpringDispatcher</servlet-name>
 		<servlet-class>
          org.springframework.web.servlet.DispatcherServlet
 		</servlet-class>
@@ -36,7 +40,7 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>HelloWeb</servlet-name>
+		<servlet-name>PrizyPricerSpringDispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 

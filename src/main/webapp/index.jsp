@@ -27,44 +27,31 @@
 
 		$.ajax({
 			type : "POST",
-			url : "product",
+			url : "/prizy-pricer/product",
 			dataType : "json",
 			contentType : "application/json; charset=utf-8",
 			data : jsonString,
 			success : function(result) {
-				$('#name').val('');
-				$('#description').val('');
-				$('#price').val('');
-				$('#store').val('');
-				$('#notes').val('');
-				$('#output').html("<strong>Product Added!</strong>");
+				$('#output').html(result);
 			}
 		});
 	}
 </script>
 </head>
 <body>
+	<form name="form" onsubmit="sendData()">
 		<div
 			style="margin-left: 300px; margin-top: 110px; background-color: #5FB404; padding: 20px; width: 650px; height: 450px">
-			<a href = "index.jsp">Home</a>
 			<h1>
-				<center>Product Entry Form</center>
+				<center>Enter As</center>
 			</h1>
-			<pre>
-<p style="font-size: 20px">
-NAME          :<input type="text" name="name" id="name">
-DESCRIPTION   :<input type="text" name="description" id="description">
-PRICE         :<input type="text" name="price" id="price">
-STORE         :<input type="text" name="store" id="store">
-NOTES         :<input type="text" name="notes" id="notes">
-
 				<center>
-					<button onclick="sendData()" style="padding: 7px">Add Product</button> 
-				</center>
-<div id = "output"></div>
+					<pre>
+<p>
+<a href="/prizy-pricer/listProducts">Admin</a> OR <a href="/prizy-pricer/productEntry">Worker</a>
 </p>
-			</pre>
-
-		</div>
+					</pre>
+				</center>
+	</form>
 </body>
 </html>

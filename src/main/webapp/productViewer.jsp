@@ -11,6 +11,7 @@
 	
 		<div
 			style="margin-left: 300px; margin-top: 110px; background-color: #5FB404; padding: 20px; width: 650px; height: 450px">
+			<a href = "index.jsp">Home</a>
 			<pre>
 <p style="font-size: 20px">
 NAME          	:${product.name}

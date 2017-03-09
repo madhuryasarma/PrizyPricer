@@ -15,24 +15,17 @@ $(document).ready(function(){
     $.ajax(
     {
         type: "GET",
-        url: "../springpoc/products",
+        url: "products",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (data) {
-            
         var trHTML = '';
-                
         $.each(data, function (i, item) {
-            
-            trHTML += '<tr><td>' + item.name + '</td><td><a href="../springpoc/viewProduct?id=' + item.id + '">View</a></td></tr>';
+            trHTML += '<tr><td>' + item.name + '</td><td><a href="viewProduct?id=' + item.id + '">View</a></td></tr>';
         });
-        
         $('#products').append(trHTML);
-        
         },
-        
         error: function (msg) {
-            
             alert(msg.responseText);
         }
     });
@@ -43,6 +36,7 @@ $(document).ready(function(){
 	
 		<div
 			style="margin-left: 300px; margin-top: 110px; background-color: #5FB404; padding: 20px; width: 650px; height: 450px">
+			<a href = "index.jsp">Home</a>
 			<h1>
 				<center>All Products</center>
 			</h1>
