@@ -21,7 +21,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration()
-@ContextConfiguration("test-servlet-context.xml")
+@ContextConfiguration("/test-servlet-context.xml")
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AppTest {
   @Autowired

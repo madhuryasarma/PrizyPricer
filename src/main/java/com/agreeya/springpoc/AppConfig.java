@@ -11,7 +11,7 @@ import com.agreeya.springpoc.service.HealthService;
 import com.agreeya.springpoc.service.ProductService;
 
 @Configuration
-@ImportResource("WEB-INF/applicationContext.xml")
+@ImportResource("classpath:applicationContext.xml")
 public class AppConfig {
 
     @Bean

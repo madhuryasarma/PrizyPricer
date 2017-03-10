@@ -5,7 +5,7 @@
   <groupId>com.agreeya</groupId>
   <artifactId>prizy-pricer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <name>Prizy Pricer</name>
 
   <properties>
@@ -80,6 +80,7 @@
     </dependency>
   </dependencies>
   <build>
+    <finalName>prizy-pricer</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
